@@ -2,6 +2,8 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #161616;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   font-size: 3.5rem;
@@ -17,37 +19,36 @@ h3 {
 h4 {
   opacity: 0.25;
 }
+p {
+  font-size: 1em;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.container {
+  padding: 5vh 10vh;
+}
+
+/*Home Section*/
 .heading-below {
   color: #fca3f3;
   margin: 1rem;
 }
 .image {
   border: 1px solid #fca3f3;
-  border-radius: 212px;
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
 }
-.grid-container {
+.home-container {
   display: grid;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  grid-template-columns: auto auto;
-  margin: 1rem;
-}
-.grid-item1 {
-  margin: 2rem 1rem 0 1rem;
-}
-.align {
-  margin-left: -8rem;
-}
-.grid-item2 {
-  padding: 4rem 1rem;
-  margin: 1rem 0rem 0rem 0;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  height: 90vh;
 }
-.adjust {
-  margin-top: 5rem;
-}
-.grid-container1 {
-  margin: 3.5rem;
+/*Skill section*/
+.skill-container {
   font-size: 1.3rem;
   display: grid;
   grid-template-columns: 1fr 0fr 1.4fr 1fr;
@@ -55,40 +56,34 @@ h4 {
   gap: 30px 30px;
   grid-template-areas: "skills skills about about" "edu edu about about" ". . . .";
 }
-.grid-container1 h1 {
+.skill-container h1 {
   font-size: 2rem;
-  margin: 1rem 0rem;
   color: #54dcf2;
 }
-.grid-container1 h2 {
+.skill-container h2 {
   opacity: 1;
   font-size: 1.3rem;
   margin: 1rem 0rem;
   color: white;
 }
-.skills {
-  padding: 1rem;
+.skills,
+.edu,
+.about {
+  padding: 2em;
   background-color: #232d2f;
   border-radius: 15px;
+}
+.skills {
   grid-area: skills;
 }
-
 .edu {
-  padding: 1rem;
-  background-color: #232d2f;
-  border-radius: 15px;
   grid-area: edu;
 }
-
 .about {
-  padding: 1rem;
-  line-height: 2rem;
-  background-color: #232d2f;
-  border-radius: 15px;
   grid-area: about;
 }
 .button {
-  margin: 2rem 0rem;
+  margin-top: 1em;
   padding: 1rem 5rem;
   font-size: 1rem;
   background-color: #fca3f3;
@@ -107,50 +102,47 @@ h4 {
   outline: none;
 }
 .grid-container3 {
-  display: grid;
-  grid-template-columns: 2fr 1fr 0.9fr 2fr;
-  text-align: center;
-  grid-template-rows: 0.2fr 2.6fr 0.2fr;
-  gap: 1px 1px;
-  grid-template-areas: ". . . ." ". contact contact ." ". . . .";
+  display: flex;
+  justify-content: center;
 }
 
-.contact {
-  grid-area: contact;
+.contact-form {
   background-color: #232d2f;
   border-radius: 18px;
+  padding: 2em;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 350px;
 }
-input {
-  display: block;
-  margin: 2rem 0rem;
-  padding: 1rem 4rem;
+.form-text {
+  padding: 0;
+  margin-bottom: 2em;
+  line-height: 1;
+}
+.form-text h2 {
+  margin: 0;
+  padding: 0;
+}
+.form-input {
   border-radius: 10px;
   border: none;
   background-color: #161616;
   color: white;
-  text-align: center;
+  text-align: left;
+  width: 90%;
+  padding: 1em;
+  margin-bottom: 1em;
+  font-family: "Montserrat";
 }
-.middle {
-  margin: 2rem 0rem 0rem 6rem;
-}
-textarea {
-  margin: 1rem 0rem 1rem 6rem;
-  display: block;
-  padding: 1rem 1.8rem;
-  border-radius: 10px;
-  border: none;
-  background-color: #161616;
-  text-align: center;
+.form-input::placeholder {
   color: white;
 }
 .submit-button {
-  margin: 1rem 0rem 4rem 0;
-  padding: 0.5rem 4.5rem;
-  font-size: 1rem;
-  background-color: #fca3f3;
-  color: black;
-  border: none;
-  border-radius: 0.5rem;
+  margin-top: 1em;
+
+  max-width: 90%;
+  text-align: center;
 }
 .submit-button:hover {
   background-color: #54dcf2;
@@ -167,6 +159,10 @@ textarea:focus {
   color: black;
   outline: none;
 }
+#skills,
+#footer {
+  margin: 5vh;
+}
 footer {
   background-color: #232d2f;
   position: absolute;
@@ -174,20 +170,21 @@ footer {
   height: 220px;
   left: 0px;
 }
-.footer{
-    margin: 2rem 1rem 1rem 1rem;
-    text-align: center;
+.footer {
+  margin: 2rem 1rem 1rem 1rem;
+  text-align: center;
 }
-.icon{
-    display: inline-block;
-    padding: 2rem 5rem;
+.icon {
+  display: inline-block;
+  padding: 2rem 5rem;
 }
-.fab,.far{
-    color: #54dcf2;
+.fab,
+.far {
+  color: #54dcf2;
 }
-.footer-text{
-    color: #54dcf2;
-    text-align: center;
-    margin: 1rem;
-    opacity: 1;
+.footer-text {
+  color: #54dcf2;
+  text-align: center;
+  margin: 1rem;
+  opacity: 1;
 }
