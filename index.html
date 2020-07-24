@@ -8,17 +8,43 @@
     <!-- custom css -->
     <link rel="stylesheet" href="./public/styles.css">
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <!-- font awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/9b41d119d7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <section>
+        <div class="nav-container">
+            <div class="navbar-nav">
+                <span class="brand">A.C.</span>
+                <nav class="navbar">
+                    <ul>
+                        <li>
+                            <a href="#home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#skills">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </section>
     <section id="home">
         <div class="home-container container">
             <div class="grid-item1">
                 <img src="./public/images/flatfaces23-512.webp" alt="" class="image">
-                <h1 class="heading-below">Name</h1>
+                <h1 class="heading-below">First Last</h1>
             </div>
             <div class="grid-item2">
                 <h1>Problem Solver</h1>
@@ -31,28 +57,28 @@
         <div class="skill-container container">
             <div></div>
             <div class="skills">
-                <h1>Skills</h1>
+                <h1 class="about-text">Skills</h1>
                 <h2>web dev</h2>
                 <h2>app dev</h2>
                 <h2>ethical hacking</h2>
                 <h2>and much more</h2>
             </div>
             <div class="edu">
-                <h1>Education</h1>
+                <h1 class="about-text">Education</h1>
                 <h2>Higher Secondary School</h2>
                 <p>XYZ school,Delhi</p>
                 <h2>Btech comp sci</h2>
                 <p>Vellore Institute of Technology</p>
             </div>
             <div class="about">
-                <h1>About</h1>
+                <h1 class="about-text">About</h1>
                 <p>Lorem ipsum dolor sit, amet consLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi blandit cursus risus at ultrices
                     mi. Nibh nisl condimentum id venenatis. Vitae auctor eu augue ut lectus arcu bibendum. Libero id
                     faucibus nisl ed risus. Amet luctus venenatis lectus magna fringilla.
                     Aliquam faucibus purus in massa tempor. Molestie ac feugiat sed lectus vestibulum mattis
                     ullamcorper. </p>
-                    <p>
+                <p>
                     ulvinar sapien et ligula ullamcorper malesuada proin. Vulputate mi sit amet mauris commodo quis
                     imperdiet. Aliquam purus sit amet luctus vene
                     natis lectus magna.ectetur adipisicing elit. Voluptatem dolor, inventore ex eligendi praesentium ab
@@ -63,17 +89,16 @@
         </div>
     </section>
     <section id="contact">
-        <div class="grid-container3">
+        <div class="grid-container3 container">
             <div class="contact-form">
                 <div class="form-text">
-                <h2>Drop Your details down below!</h2>
-                <h2>I'll ping you!</h2>
-
+                    <h2>Drop Your details down below!</h2>
+                    <h2>I'll ping you!</h2>
                 </div>
-                    <input type="text" placeholder="Name" class="form-input">
-                    <input type="email" placeholder="Email" class="form-input">
-                    <textarea rows="5" placeholder="Your Message" class="form-input"></textarea>
-                    <button class="submit-button button">Send</button>
+                <input type="text" placeholder="Name" class="form-input">
+                <input type="email" placeholder="Email" class="form-input">
+                <textarea rows="5" placeholder="Your Message" class="form-input"></textarea>
+                <button class="submit-button button">Send</button>
             </div>
         </div>
     </section>
