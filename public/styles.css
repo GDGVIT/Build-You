@@ -30,7 +30,6 @@ p {
   font-weight: 400;
 }
 
-
 /*Navbar*/
 .nav-container {
   display: flex;
@@ -42,7 +41,7 @@ p {
   justify-content: center;
   z-index: 99;
 }
-.navbar-nav{
+.navbar-nav {
   display: flex;
   padding: 0 10vw;
   width: 100%;
@@ -64,13 +63,16 @@ li {
 }
 
 li a {
-
   text-decoration: none;
   padding: 1em 2em;
   color: #54dcf2;
 }
 
-
+.click a {
+  border-bottom: 3px solid #fa788d;
+  color: #fa788d;
+  font-weight: bold;
+}
 
 .container {
   padding: 0vh 5vw 10vh 5vw;
@@ -78,13 +80,13 @@ li a {
 
 /*Home Section*/
 .heading-below {
-  color: #FA788D;
+  color: #fa788d;
   margin: 1rem;
   font-size: 2.5rem;
 }
 
 .image {
-  border: 1px solid #FA788D;
+  border: 1px solid #fa788d;
   border-radius: 50%;
   width: 15em;
   height: 15em;
@@ -107,7 +109,7 @@ li a {
   grid-template-columns: 1fr 0fr 1.4fr 1fr;
   grid-template-rows: 0fr 1fr;
   gap: 30px 30px;
-  grid-template-areas: "skills skills about about""edu edu about about"". . . .";
+  grid-template-areas: "skills skills about about" "edu edu about about" ". . . .";
 }
 
 .skill-container h1 {
@@ -130,7 +132,7 @@ li a {
   border-radius: 15px;
 }
 
-.about-text{
+.about-text {
   margin-bottom: 2rem;
 }
 
@@ -150,12 +152,12 @@ li a {
   margin-top: 1em;
   padding: 1rem 5rem;
   font-size: 1rem;
-  background-color: #FA788D;
+  background-color: #fa788d;
   color: black;
   font-weight: bold;
   border: none;
   border-radius: 0.5rem;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 .button:hover {
@@ -188,11 +190,12 @@ li a {
   padding: 0;
   margin-bottom: 2em;
   line-height: 1;
+  text-align: center;
 }
-
 .form-text h2 {
-  margin: 0;
+  margin: 1rem 0;
   padding: 0;
+  font-size: 15pt;
   font-weight: 500;
 }
 
@@ -203,7 +206,7 @@ li a {
   color: white;
   text-align: left;
   width: 90%;
-  padding:1em;
+  padding: 1em;
   margin-bottom: 1rem;
   font-family: "Montserrat";
   font-size: 1rem;
@@ -219,7 +222,7 @@ li a {
   max-width: 90%;
   text-align: center;
   font-size: 1rem;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 .submit-button:hover {
