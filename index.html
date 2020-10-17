@@ -99,22 +99,25 @@
                     natis lectus magna.ectetur adipisicing elit. Voluptatem dolor, inventore ex eligendi praesentium ab
                     nesciunt a natus, fuga quas dignissimos
                     distinctio nihil perspiciatis molestiae quae.</p>
-                <button class="button">Download CV</button>
+                    <a href="./public/doc/" download="resume.txt">
+                        <button class="button">Download CV</button>
+                    </a>
+              
             </div>
         </div>
     </section>
     <section id="contact">
         <div class="grid-container3 ">
-            <div class="contact-form" data-aos="fade-up">
+            <form class="contact-form" data-aos="fade-up" method="post" action="mailto:someone@xyz.com">
                 <div class="form-text">
                     <h2>Drop your details down below!</h2>
                     <h2>I'll ping you!</h2>
                 </div>
-                <input type="text" placeholder="Name" class="form-input">
-                <input type="email" placeholder="Email" class="form-input">
-                <textarea class="form-input" rows="5" placeholder="Type your message"></textarea>
+                <input type="text" placeholder="Name" class="form-input" required>
+                <input type="email" placeholder="Email" class="form-input" required>
+                <textarea class="form-input" rows="5" placeholder="Type your message" required></textarea>
                 <button class="submit-button button">Send</button>
-            </div>
+            </form>
 
         </div>
 

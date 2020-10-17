@@ -281,6 +281,16 @@ footer {
   opacity: 1;
 }
 
+.icon{
+  transition: scale 1s ease-in-out;
+}
+
+
+.icon:hover, .icon:focus{
+  transform: scale(1.2)
+}
+
+
 /*responsive navbar*/
 .nav-responsive{
   display: flex;
@@ -291,7 +301,6 @@ footer {
 button{
   max-width: 100%;
 }
-
 
 
 .hide{
@@ -349,6 +358,9 @@ button{
   .icon{
     margin-top: 0;
   }
+
+
+  
 h1{
   font-size: 3rem;
 
