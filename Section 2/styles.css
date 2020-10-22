@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #161616;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*navbar*/
+.nav-container{
+    position: fixed;
+    width: 100%;
+    background-color: #161616;
+    z-index: 99;
+}
+.navbar-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem; 
+  padding: 0 10vw;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline;
+    padding: 0 2rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #54dcf2;
+}
+.brand{
+    color: white;
+}
+/*home section*/
+.container{
+    display: flex;
+    padding: 15vh 10vw 5vh 10vw;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.image-container, .designation-container{
+    text-align: center;
+}
+
+.image-container{
+    width: 30%;
+}
+.designation-container{
+    width: 70%;
+}
+
+.me{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fa788d;
+}
+h4{
+    font-size: 1.5rem;
+    color: #fa788d;
+}
+h1{
+    font-size: 3.5rem;
+    margin: 0;
+}
+h2{
+    font-size: 2.5rem;
+    opacity: 0.75;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+h3{
+    font-size: 1.5rem;
+    opacity: 0.5;
+    margin: 0;
+}
+
+/*About*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    padding: 15vh 10vw 5vh 10vw;
+    grid-gap: 30px;
+}
+.about, .skills, .education{
+    background-color: #232d2f;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.about{
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+.skills{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.education{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.h1{
+    font-size: 2rem;
+    color: #54dcf2;
+}
+.h2{
+    font-size: 1rem;
+    opacity: 1;
+    margin: 1rem 0;
+}
+p{
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 400;
+}
+.btn{
+    border: none;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: black;
+    background-color: #fa788d;
+    padding: 0.5rem 2rem;   
+}

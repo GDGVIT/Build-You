@@ -5,31 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- custom css -->
-    <link rel="stylesheet" href="./public/styles.css">
+
+    <!--AOS Animation-->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">    <!-- font awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/9b41d119d7.js" crossorigin="anonymous"></script>
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 
 <body>
     <section>
         <div class="nav-container">
             <div class="navbar-nav">
-                <span class="brand">A.C.</span>
-                <nav class="navbar">
+                <span class="nav-responsive">
+                    <span class="brand">A.C.</span>
+                    <div class="toggle-btn hide">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </span>
+
+
+                <nav class="nav">
                     <ul>
-                        <li id="home-item">
+                        <li id="home-item" class="click nav-item">
                             <a href="#home">
                                 Home
                             </a>
                         </li>
-                        <li id="skills-item">
+                        <li id="skills-item" class="nav-item">
                             <a href="#skills">
                                 About
                             </a>
                         </li>
-                        <li id="contact-item">
+                        <li id="contact-item" class="nav-item">
                             <a href="#contact">
                                 Contact Me
                             </a>
@@ -41,12 +56,12 @@
         </div>
     </section>
     <section id="home">
-        <div class="home-container container">
-            <div class="grid-item1">
+        <div class="container " data-aos="fade-up">
+            <div class="image-container">
                 <img src="./public/images/flatfaces23-512.webp" alt="" class="image">
                 <h1 class="heading-below">First Last</h1>
             </div>
-            <div class="grid-item2">
+            <div class="designation-container">
                 <h1>Problem Solver</h1>
                 <h2>Budding Web Developer</h2>
                 <h3>Technical Blogger</h3>
@@ -54,24 +69,24 @@
         </div>
     </section>
     <section id="skills">
-        <div class="skill-container container">
-            <div></div>
-            <div class="skills">
-                <h1 class="about-text">Skills</h1>
-                <h2>web dev</h2>
-                <h2>app dev</h2>
-                <h2>ethical hacking</h2>
-                <h2>and much more</h2>
+        <div class="grid-container" data-aos="fade-up">
+
+            <div class="skills ">
+                <h1 class="h1">Skills</h1>
+                <h2 class="h2">web dev</h2>
+                <h2 class="h2">app dev</h2>
+                <h2 class="h2">ethical hacking</h2>
+                <h2 class="h2">and much more</h2>
             </div>
-            <div class="edu">
-                <h1 class="about-text">Education</h1>
-                <h2>Higher Secondary School</h2>
+            <div class="edu ">
+                <h1 class="h1">Education</h1>
+                <h2 class="h2">Higher Secondary School</h2>
                 <p>XYZ school,Delhi</p>
-                <h2>Btech comp sci</h2>
+                <h2 class="h2">Btech comp sci</h2>
                 <p>Vellore Institute of Technology</p>
             </div>
-            <div class="about">
-                <h1 class="about-text">About</h1>
+            <div class="about ">
+                <h1 class="h1">About</h1>
                 <p>Lorem ipsum dolor sit, amet consLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi blandit cursus risus at ultrices
                     mi. Nibh nisl condimentum id venenatis. Vitae auctor eu augue ut lectus arcu bibendum. Libero id
@@ -84,39 +99,52 @@
                     natis lectus magna.ectetur adipisicing elit. Voluptatem dolor, inventore ex eligendi praesentium ab
                     nesciunt a natus, fuga quas dignissimos
                     distinctio nihil perspiciatis molestiae quae.</p>
-                <button class="button">Download CV</button>
+                    <a href="./public/doc/" download="resume.txt">
+                        <button class="button">Download CV</button>
+                    </a>
+              
             </div>
         </div>
     </section>
     <section id="contact">
-        <div class="grid-container3 container">
-            <div class="contact-form">
+        <div class="grid-container3 ">
+            <form class="contact-form" data-aos="fade-up" method="post" action="mailto:someone@xyz.com">
                 <div class="form-text">
-                    <h2>Drop Your details down below!</h2>
+                    <h2>Drop your details down below!</h2>
                     <h2>I'll ping you!</h2>
                 </div>
-                <input type="text" placeholder="Name" class="form-input">
-                <input type="email" placeholder="Email" class="form-input">
-                <textarea rows="5" placeholder="Your Message" class="form-input"></textarea>
+                <input type="text" placeholder="Name" class="form-input" required>
+                <input type="email" placeholder="Email" class="form-input" required>
+                <textarea class="form-input" rows="5" placeholder="Type your message" required></textarea>
                 <button class="submit-button button">Send</button>
-            </div>
+            </form>
+
         </div>
+
     </section>
     <section id="footer">
         <footer>
             <div class="footer">
                 <div class="icon"><a href="#"><i class="fab fa-github fa-3x"></i></a></div>
-                <div class="icon"><a href="#"><i class="far fa-envelope fa-3x"></i></a></div>
-                <div class="icon"><a href="#"><i class="fab fa-linkedin fa-3x"></i></a></div>
+                <div class="icon"><a href="#"><i class="fab fa-facebook fa-3x"></i></a></div>
                 <div class="icon"><a href="#"><i class="fab fa-instagram fa-3x"></i></a></div>
+                <div class="icon"><a href="#"><i class="fab fa-linkedin fa-3x"></i></a></div>
+
             </div>
             <div class="footer-text">
-                <h3>Name | New Delhi, India.</h3>
+                <h3>Anshul | Pune, India.</h3>
             </div>
         </footer>
+
     </section>
-    <!-- custom js -->
-    <script src="./index.js"></script>
+
+    <!--AOS JS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- js -->
+    <script src="./public/js/index.js"></script>
 </body>
 
 </html>

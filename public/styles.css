@@ -247,10 +247,7 @@ textarea:focus {
 
 footer {
   background-color: #232d2f;
-  position: absolute;
   width: 100%;
-  height: 220px;
-  left: 0px;
 }
 
 .footer {
@@ -271,6 +268,10 @@ footer {
 .footer-text {
   color: #54dcf2;
   text-align: center;
-  margin: 1rem;
+  padding: 1rem;
   opacity: 1;
+}
+.footer-text>h3{
+  margin: 0;
+  
 }
