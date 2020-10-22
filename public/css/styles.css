@@ -375,8 +375,10 @@ h3{
   font-size: 1.3rem;
 }
 
- 
+
 }
+
+ /*XS Screens*/
 
 @media (max-width: 400px){
   .footer{

@@ -1,0 +1,277 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #161616;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 3.5rem;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  opacity: 0.75;
+  font-weight: 700;
+}
+
+h3 {
+  opacity: 0.5;
+}
+
+h4 {
+  opacity: 0.25;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+/*Navbar*/
+.nav-container {
+  display: flex;
+  font-size: 1.5em;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  background-color: #161616;
+  justify-content: center;
+  z-index: 99;
+}
+.navbar-nav {
+  display: flex;
+  padding: 0 10vw;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.brand {
+  padding: 1em 2em;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  text-align: right;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  text-decoration: none;
+  padding: 1em 2em;
+  color: #54dcf2;
+}
+
+.click a {
+  border-bottom: 3px solid #fa788d;
+  color: #fa788d;
+  font-weight: bold;
+}
+
+.container {
+  padding: 15vh 5vw 0vh 5vw;
+}
+
+/*Home Section*/
+.heading-below {
+  color: #fa788d;
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+
+.image {
+  border: 1px solid #fa788d;
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  padding: 15vw 10vh 0vw 10vw;
+}
+
+/*Skill section*/
+.skill-container {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 0fr 1.4fr 1fr;
+  grid-template-rows: 0fr 1fr;
+  gap: 30px 30px;
+  grid-template-areas: "skills skills about about" "edu edu about about" ". . . .";
+}
+
+.skill-container h1 {
+  font-size: 2rem;
+  color: #54dcf2;
+}
+
+.skill-container h2 {
+  opacity: 1;
+  margin: 1rem 0rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.skills,
+.edu,
+.about {
+  padding: 2em;
+  background-color: #232d2f;
+  border-radius: 15px;
+}
+
+.about-text {
+  margin-bottom: 2rem;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.edu {
+  grid-area: edu;
+}
+
+.about {
+  grid-area: about;
+}
+
+.button {
+  margin-top: 1em;
+  padding: 1rem 5rem;
+  font-size: 1rem;
+  background-color: #fa788d;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Montserrat";
+}
+
+.button:hover {
+  background-color: #54dcf2;
+  border: none;
+}
+
+.button:focus {
+  background-color: #54dcf2;
+  border: none;
+  outline: none;
+}
+
+.grid-container3 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15vh;
+}
+
+.contact-form {
+  background-color: #232d2f;
+  border-radius: 18px;
+  padding: 2em;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 350px;
+}
+
+.form-text {
+  padding: 0;
+  margin-bottom: 2em;
+  line-height: 1;
+  text-align: center;
+}
+.form-text h2 {
+  margin: 1rem 0;
+  padding: 0;
+  font-size: 15pt;
+  font-weight: 500;
+}
+
+.form-input {
+  border-radius: 10px;
+  border: none;
+  background-color: #161616;
+  color: white;
+  text-align: left;
+  width: 90%;
+  padding: 1em;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  font-size: 1rem;
+}
+
+.form-input::placeholder {
+  color: white;
+  font-size: 1rem;
+}
+
+.submit-button {
+  margin-top: 1em;
+  max-width: 90%;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Montserrat";
+}
+
+.submit-button:hover {
+  background-color: #54dcf2;
+  border: none;
+}
+
+.submit-button:focus {
+  background-color: #54dcf2;
+  border: none;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: white;
+  color: black;
+  outline: none;
+}
+
+
+footer {
+  background-color: #232d2f;
+  width: 100%;
+}
+
+.footer {
+  margin: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.icon {
+  display: inline-block;
+  padding: 2rem 5rem;
+}
+
+.fab,
+.far {
+  color: #54dcf2;
+}
+
+.footer-text {
+  color: #54dcf2;
+  text-align: center;
+  padding: 1rem;
+  opacity: 1;
+}
+.footer-text>h3{
+  margin: 0;
+  
+}
