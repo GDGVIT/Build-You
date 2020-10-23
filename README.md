@@ -12,11 +12,11 @@
 
 
 ## How the resources work
-* <strong>Section 1:</strong><br>Here you will find the HTML and CSS for the Home page (including the navbar)
+* <strong>Section 1:</strong><br>Here you will find the HTML and CSS for the home page and the navigation bar
 * <strong>Section 2:</strong> <br>
-Here you will find the HTML and CSS for the About page
+Here you will find the HTML and CSS for the home page, navigation bar and about page
 * <strong>Section 3:</strong> <br>
-Here you will find the HTML and CSS for the contact page along with the footer
+Here you will find the HTML and CSS for the home page, navigation bar, about page, contact page and footer
 
 * <strong>Responsive Website:</strong><br>
 The index.html file contains the HTML for the responsive website. The public folder
