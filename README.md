@@ -11,87 +11,52 @@
   [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
 
 
-## Functionalities
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
-- [ ]  < insert functionality >
+## How the resources work
+* <strong>Section 1:</strong><br>Here you will find the HTML and CSS for the Home page (including the navbar)
+* <strong>Section 2:</strong> <br>
+Here you will find the HTML and CSS for the About page
+* <strong>Section 3:</strong> <br>
+Here you will find the HTML and CSS for the contact page along with the footer
+
+* <strong>Responsive Website:</strong><br>
+The index.html file contains the HTML for the responsive website. The public folder
+has all the assests (CSS & JavaScript) for the responsive website!
+
+Resources to learn more:
+https://docs.google.com/document/d/14BNEobHzDLhWJ_KMfWvb8EHxIRhC-a5M9rGHcnyl8eU/edit?usp=sharing
+
+Youtube link for BuildYou(tutorial):
+https://www.youtube.com/watch?v=se5ZSadz0lA
+
+Responsive website link:
+https://buildyou.netlify.app/
+
+
 
 <br>
 
 
 ## Instructions to run
 
-* Pre-requisites:
-	-  < insert pre-requisite >
-	-  < insert pre-requisite >
 
 * < directions to install > 
 ```bash
-< insert code >
+git clone https://github.com/GDGVIT/Build-You
 ```
 
 * < directions to execute >
 
 ```bash
-< insert code >
+Run the index.html file for the responsive website
 ```
 
 ## Contributors
 
-<table>
-<tr align="center">
+* [ Anshul Bamb ](https://github.com/antirex)
+* [ Gurnehmat Kaur Dhindsa  ](https://github.com/gkdhindsa)
+* [ Aditya Madan  ](https://github.com/AdityaMadan) (Design)
 
 
-<td>
-
-John Doe
-
-<p align="center">
-<img src = "https://dscvit.com/images/dsc-logo-square.svg" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
-</p>
-<p align="center">
-<a href = "https://github.com/person1"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/person1">
-<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
-</a>
-</p>
-</td>
-
-
-<td>
-
-John Doe
-
-<p align="center">
-<img src = "https://dscvit.com/images/dsc-logo-square.svg" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
-</p>
-<p align="center">
-<a href = "https://github.com/person2"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/person2">
-<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
-</a>
-</p>
-</td>
-
-
-
-<td>
-
-John Doe
-
-<p align="center">
-<img src = "https://dscvit.com/images/dsc-logo-square.svg" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
-</p>
-<p align="center">
-<a href = "https://github.com/person3"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/person3">
-<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
-</a>
-</p>
-</td>
-</tr>
-  </table>
   
 ## License
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
